@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diseño del Modelo Conceptual Bajo el Paradigma Orientado a Objetos</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="header">
+
+<nav class="navbar">
+
+<div class="logo">
+UML & POO
+</div>
+
+<ul class="menu">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#modelo">Modelo Conceptual</a></li>
+<li><a href="#uml">UML</a></li>
+<li><a href="#diagrama">Diagrama de Clases</a></li>
+<li><a href="#relaciones">Relaciones</a></li>
+<li><a href="#case">CASE</a></li>
+</ul>
+
+<div class="menu-toggle">
+☰
+</div>
+
+</nav>
+
+</header>
+
+<section id="inicio" class="hero">
+
+<div class="hero-content">
+
+<h1>
+Diseño del modelo conceptual bajo el paradigma orientado a objetos
+</h1>
+
+<p>
+Comprensión de UML, Diagramas de Clases y Herramientas CASE para el desarrollo de software.
+</p>
+
+<a href="#modelo" class="btn">
+Comenzar
+</a>
+
+</div>
+
+</section>
+
+<section id="modelo" class="section">
+
+<div class="container">
+
+<h2>
+Diseño del modelo conceptual bajo el paradigma orientado a objetos
+</h2>
+
+<div class="card">
+
+<p>
+Para la construcción de software se hace evidente la importancia de la utilización de modelos ya que representan el aspecto y la dirección de una necesidad. Esa “necesidad” puede existir, estar en un estado de desarrollo o en un estado de planeación. Los diseñadores del modelo deben realizar un levante de los requerimientos del producto y dichos requerimientos.
+</p>
+
+<p>
+Pueden incluir áreas tales como funcionalidad, performance y confiabilidad. El modelo se divide en un número de vistas, cada una de las cuales describe un aspecto específico del producto o sistema en construcción. Un modelo permite documentar la estructura y conducta de un sistema antes de que sea codificado.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="uml" class="section alternate">
+
+<div class="container">
+
+<h2>
+INTRODUCCION A UML
+</h2>
+
+<div class="card">
+
+<p>
+UML, es una técnica para la especificación de sistemas en todas sus fases. Nació en 1994 cubriendo los aspectos principales de todos los métodos de diseño antecesores y precisamente, los padres de UML son Grady Booch, autor del método Booch; James Rumbaugh, autor del método OMT e Ivar Jacobson, autor de los métodos OOSE y Objectory. La versión 1.0 de UML fue liberada en enero de 1997 y ha sido utilizado con éxito en sistemas construidos para toda clase de industrias alrededor del mundo: hospitales, bancos, comunicaciones, aeronáutica, finanzas, etc. (2009, March 04).
+</p>
+
+<p>
+UML por sus siglas en inglés (Unified Modeling Language), lenguaje unificado de modelado, es el lenguaje de modelado de sistemas de software más conocido y utilizado en la actualidad, permite visualizar, especificar, construir y documentar sistemas con una perspectiva orientada a objetos (Rumbaugh et al., 2004).
+</p>
+
+</div>
+
+<div class="uml-grid">
+
+<div class="info-box">
+<h3>Visualizar</h3>
+<p>Permite representar gráficamente sistemas de software.</p>
+</div>
+
+<div class="info-box">
+<h3>Especificar</h3>
+<p>Describe claramente los componentes y comportamientos.</p>
+</div>
+
+<div class="info-box">
+<h3>Construir</h3>
+<p>Sirve como guía para la implementación del software.</p>
+</div>
+
+<div class="info-box">
+<h3>Documentar</h3>
+<p>Facilita la documentación de sistemas orientados a objetos.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="diagrama" class="section">
+
+<div class="container">
+
+<h2>
+DIAGRAMA DE CLASES
+</h2>
+
+<div class="card">
+
+<p>
+Un diagrama de clases es un tipo de diagrama estático que describe la estructura de un sistema mostrando sus clases, atributos y las relaciones entre ellos. Los diagramas de clases son utilizados durante el proceso de análisis y diseño de los sistemas, donde se crea el diseño conceptual de la información que se manejará en el sistema, y los componentes que se encargarán del funcionamiento y la relación entre uno y otro. En un diagrama de clases se pueden distinguir principalmente dos elementos: clases y sus relaciones, (Flores Cueto & Bertolotti Zuñiga, 2013).
+</p>
+
+</div>
+
+<div class="example-card">
+
+<h3>
+Ejemplo de Clase Producto
+</h3>
+
+<div class="uml-class">
+
+<div class="class-name">
+Producto
+</div>
+
+<div class="class-attributes">
+- codigo : int <br>
+- nombre : String <br>
+- precio : double
+</div>
+
+<div class="class-methods">
++ obtenerPrecio() <br>
++ calcularTotal()
+</div>
+
+</div>
+
+<p>
+Se observa que todos los atributos en esta clase son privados porque tienen el símbolo – y los métodos son públicos porque tienen el símbolo +.
+</p>
+
+</div>
+
+<div class="card">
+
+<p>
+El objetivo de un diagrama de clase es representar las clases que conforman el modelo de un determinado sistema, el diagrama de clase se construye y se refina durante las fases de análisis y diseño, y se toma como referencia en la implementación del sistema.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="relaciones" class="section alternate">
+
+<div class="container">
+
+<h2>
+Relaciones entre clases
+</h2>
+
+<div class="card">
+
+<p>
+Las relaciones existentes entre las distintas clases nos indican cómo se comunican los objetos de esas clases entre sí:
+</p>
+
+<ul class="lista">
+<li>Asociación (conexión entre clases).</li>
+<li>Dependencia (relación de uso).</li>
+<li>Generalización (relaciones de herencia).</li>
+</ul>
+
+</div>
+
+<div class="cards-grid">
+
+<div class="relation-card">
+<h3>Asociación</h3>
+<p>Conexión entre clases.</p>
+</div>
+
+<div class="relation-card">
+<h3>Dependencia</h3>
+<p>Relación de uso entre elementos.</p>
+</div>
+
+<div class="relation-card">
+<h3>Generalización</h3>
+<p>Representa relaciones de herencia.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2>
+2.2. Asociaciones
+</h2>
+
+<div class="card">
+
+<p>
+Se le conoce como relación de asociación a las conexiones entre clases. Este tipo de relación se representa gráficamente como una línea que une las dos clases y tiene las siguientes características:
+</p>
+
+<ol class="lista-numerada">
+
+<li>
+Nombre de la asociación. (Es obligatorio establecer el nombre de la asociación).
+</li>
+
+<li>
+Cada clase tiene asociado un rol, el cual se interpreta como el papel que juega dicha clase en el contexto de la asociación.
+</li>
+
+<li>
+Navegabilidad: en las relaciones de asociación se puede establecer si el vínculo es unidireccional o bidireccional.
+</li>
+
+<li>
+Multiplicidad: representan el número de instancias de la clase que pueden ser partícipes en el proceso de asociación.
+</li>
+
+</ol>
+
+</div>
+
+<div class="association-example">
+
+<h3>
+Ejemplo de Asociación
+</h3>
+
+<div class="association-box">
+
+<div class="class-box">
+Clase A
+</div>
+
+<div class="arrow">
+➜
+</div>
+
+<div class="class-box">
+Clase B
+</div>
+
+</div>
+
+<p>
+Ejemplo gráfico de una asociación unidireccional entre dos clases.
+</p>
+
+</div>
+
+</div>
+
+</section>
